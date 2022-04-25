@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
     console.log('who connected.');
 });
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('server listening on 5000..');
 });
